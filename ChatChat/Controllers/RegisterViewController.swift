@@ -1,5 +1,6 @@
 //
-//  ViewController.swift
+//
+//  RegisterViewController.swift
 //  ChatChat
 //
 //  Created by Kyle Braden on 12/17/19.
@@ -8,13 +9,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+
     }
+    
 
 
 }
-
