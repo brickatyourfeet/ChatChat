@@ -163,6 +163,16 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="776"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="MmI-59-66O">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MmI-59-66O" id="6pu-VU-LSB">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="082-eF-kOw">
                                 <rect key="frame" x="31" y="828" width="272" height="34"/>
@@ -182,7 +192,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="50q-pV-ywb"/>
                     </view>
-                    <navigationItem key="navigationItem" id="2kD-6E-SXc"/>
+                    <navigationItem key="navigationItem" id="2kD-6E-SXc">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="1Eo-CP-516">
+                            <connections>
+                                <action selector="logOutPressed:" destination="jfj-8C-RC0" id="FfF-kb-irj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="082-eF-kOw" id="T1U-Jx-0q1"/>
                         <outlet property="tableView" destination="xYG-Zb-bBI" id="DGv-uE-KBN"/>
@@ -215,6 +231,6 @@
         <image name="arrowshape.turn.up.right" catalog="system" width="64" height="52"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qX7-HT-RJA"/>
+        <segue reference="4iv-kH-b4H"/>
     </inferredMetricsTieBreakers>
 </document>
